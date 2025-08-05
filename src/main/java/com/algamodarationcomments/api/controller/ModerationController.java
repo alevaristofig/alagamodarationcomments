@@ -18,7 +18,7 @@ public class ModerationController {
 	private ModerationService service;
 
 	@PostMapping
-	public ModerationOutput moderation(@RequestBody ModerationInput input) {
+	public ModerationOutput moderation(@RequestBody ModerationInput input) {			
 		return service.moderate(input);
 	}
 }
